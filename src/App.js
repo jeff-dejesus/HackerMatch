@@ -19,10 +19,10 @@ import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 /*firebase.initializeApp({
 
-})
+})*/
 
 const auth = firebase.auth();
-const firestore = firebase.firestore();*/
+const firestore = firebase.firestore();
 
 class App extends Component {
   render() {
