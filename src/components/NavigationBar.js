@@ -1,16 +1,17 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Nav, Navbar } from 'react-bootstrap';
+import React, { Component } from 'react';
+import { Switch, Route, Link } from 'react-router-dom';
+import { Nav, Navbar, Button } from 'react-bootstrap';
 import styled from 'styled-components';
+import { useAuth } from "../contexts/AuthContext"
 
 const Styles = styled.div`
   .navbar {
     background-color: #2D3B4F;
   }
   a, .navbar-brand, .navbar-nav .nav-link {
-    color: #bbb;
+    color: #ECF7FD;
     &:hover {
-      color: white;
+      color: #FFFFFF;
     }
   }
 `;
@@ -21,11 +22,13 @@ export const NavigationBar = () => (
             <Navbar.Brand href="/">Hacker Meet</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ml-auto">
-                    <Nav.Item><Nav.Link to="/users">Users</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link to="/groups">Groups</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link to="/settings">Settings</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link to="/signout">Signout</Nav.Link></Nav.Item>
+                <Nav className="ml-auto" >
+                    <Nav.Item><Link to="/" className="nav-link">Home</Link></Nav.Item>
+                    <Nav.Item><Link to="/chat" className="nav-link">Chat</Link></Nav.Item>
+                    <Nav.Item><Link to="/users" className="nav-link">Users</Link></Nav.Item>
+                    <Nav.Item><Link to="/groups" className="nav-link">Groups</Link></Nav.Item>
+                    <Nav.Item><Link to="/settings" className="nav-link">Settings</Link></Nav.Item>
+                    <Nav.Item><Link to="/logout" className="nav-link">Logout</Link></Nav.Item>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
