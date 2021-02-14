@@ -1,6 +1,7 @@
 import firebase from "firebase/app"
 import "firebase/auth"
 
+//where we have authentication to connect to firebase
 const app = firebase.initializeApp({
   apiKey: "AIzaSyA5FykG90fqYYtuIixgzrgziCA-fatiHgg",
   authDomain: "celtic-artwork-296608.firebaseapp.com",

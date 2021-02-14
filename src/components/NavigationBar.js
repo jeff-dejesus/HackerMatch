@@ -22,12 +22,10 @@ export const NavigationBar = () => (
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
-                    <Nav.Item><Nav.Link to="/">Login</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link to="/signup">Signup</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link to="/home">Home</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link to="/Users">Users</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link to="/Groups">Groups</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link to="/users">Users</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link to="/groups">Groups</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link to="/settings">Settings</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link to="/signout">Signout</Nav.Link></Nav.Item>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
